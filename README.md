@@ -62,6 +62,7 @@ Finally, click on "Run with this Value" and you should see the translated *Bonjo
 
 ```
 function main(params) {
+	//this will create a new document with an id value of the payload
 	return { doc: { _id: params.payload } };
 }
 ```
