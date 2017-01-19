@@ -16,6 +16,8 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Creating the translation mediator action
 
+This action will transform the incoming message so that the output will be formatted to the proper input for the Watson Language Translator API
+
 1. Go to the [OpenWhisk editor](https://console.ng.bluemix.net/openwhisk/editor) and create a new action (use the default settings) with any name of your choosing
 
 2. Replace the main function with the one below -
@@ -32,7 +34,9 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 # Creating the sequence
 
-1. Next, click on "Link into a Sequence"
+We will now create the sequence mediator-action -> watson-translator
+
+1. Click on "Link into a Sequence"
 
 2. Scroll down and choose "Watson Translator" and then choose "translator" under "Select an Action in this Package"
 
@@ -58,6 +62,8 @@ Finally, click on "Run with this Value" and you should see the translated *Bonjo
 
 # Adding the DB insertion mediator action
 
+This action will transform the incoming message so that the output will be formatted as a Cloudant document to be created
+
 1. Create yet another new action, same as before and replace the main function with the one below - 
 
 ```
@@ -70,6 +76,8 @@ function main(params) {
 Make a note of the name you chose for the action, we will need it in the next step
 
 # Extending the sequence
+
+We will now extend the sequence to mediator-action -> watson-translator -> db-insert-action
 
 1. Select the sequence you created in the previous step again and then click on "Extend"
 
@@ -84,6 +92,8 @@ Make a note of the name you chose for the action, we will need it in the next st
 6. To finish, click on "Save Configuration", followed by "Add to Sequence" and then on "Save Your Changes"
 
 # Creating the trigger
+
+To finish the flow we will create a trigger to run the sequence. The trigger will be a change in the "phrases" DB
 
 1. Click on "Automate"
 
