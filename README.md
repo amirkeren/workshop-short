@@ -34,7 +34,7 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 # Creating the sequence
 
-We will now create the sequence mediator-action -> watson-translator
+We will now create the sequence translator-mediator-action -> watson-translator
 
 1. Click on "Link into a Sequence"
 
@@ -77,7 +77,7 @@ Make a note of the name you chose for the action, we will need it in the next st
 
 # Extending the sequence
 
-We will now extend the sequence to mediator-action -> watson-translator -> db-insert-action
+We will now extend the sequence to translator-mediator-action -> watson-translator -> db-mediator-action -> db-insert
 
 1. Select the sequence you created in the previous step again and then click on "Extend"
 
