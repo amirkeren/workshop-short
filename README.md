@@ -6,37 +6,13 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 1. [Register](https://console.ng.bluemix.net/registration) for a Bluemix account if you have not done so already
 
-2. Install the Bluemix CLI using the link [here](http://clis.ng.bluemix.net/ui/home.html) - verify that it's working by running `bluemix -v` in the command prompt, this should the diplay the CLI version (if not working, make sure to add the bluemix executable to the PATH, instructions on how to do so can be found here for [windows](http://www.computerhope.com/issues/ch000549.htm), [linux](http://www.troubleshooters.com/linux/prepostpath.htm) or [mac](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.WH9RLbZ96L8))
+2. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog
 
-3. Install the CloudFoundry CLI using the link [here](https://github.com/cloudfoundry/cli/releases) - verify that it's working by running `cf -v` in the command prompt, this should the diplay the CLI version (if not working, see above for how to add to PATH)
+3. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will allow OpenWhisk to connect to that DB instance)
 
-4. Login to Bluemix with your username and password by running `bluemix login -a https://api.ng.bluemix.net` in the command prompt
+4. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
 
-# Deploying the CloudFoundry application on Bluemix
-
-1. Clone this repository by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have [git installed](https://git-scm.com/downloads)) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
-
-2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
-
-3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use your *fullname-workshop* for example) and then run `cf push`
-
-You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps). If the application fails to start, try renaming your application and run `cf push` again
-
-# Adding Cloudant NoSQL DB service to the application
-
-1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog
-
-2. Before creating the service make sure it is *bound* to the application you created in the previous step (do this by verifying that the drop-down box on the left under "Connect to:" has your application name selected)
-
-3. Restage the application if prompt to do so
-
-4. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will allow OpenWhisk to connect to that DB instance)
-
-# Adding Watson Language Traslator service
-
-1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
-
-2. Click on the "Create" button to add the new service
+5. Click on the "Create" button to add the new service
 
 # Creating the translation mediator action
 
