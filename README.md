@@ -98,10 +98,12 @@ Make a note of the name you chose for the action, we will need it in the next st
 
 1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
 
-2. Go to the web applicaton you deployed earlier and proceed to add a new phrase
+2. Go to the Cloudant instance you created (you can find it in your [dashboard](https://console.ng.bluemix.net/dashboard/services)), select it and click "Launch" on the "Manage" tab
 
-3. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
+3. Select the "phrases" database and click on the "plus" sign next to "All Documents" and choose "New Doc"
 
-4. Go to the Cloudant instance you created (you can find it in your [dashboard](https://console.ng.bluemix.net/dashboard/services)), select it and click "Launch" on the "Manage" tab
+4. Enter some phrase in English in the following form - `{ "_id": "<SOME_ENGLISH_PHRASE>" }`
 
-5. Select the "translation" database and you should see the translation of the phrase you entered stored in the database as a new document
+5. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
+
+6. Go back to the Cloudant managemnt console and this time select the "translation" database. You should see the translation of the phrase you entered stored in the database as a new document
