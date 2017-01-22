@@ -100,7 +100,7 @@ We will now extend the sequence to translator-mediator-action -> watson-translat
 
 3. Click on "Extend" again, but this time choose "Cloudant"
 
-4. From the many available options, choose "create document" and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
+4. From the many available options, choose "create document" (you can choose to "View Source" if you want to see how the actual document creation works) and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
 
 5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB
 
