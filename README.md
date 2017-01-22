@@ -26,7 +26,9 @@ This action will transform the incoming message so that the output will be forma
 function main(params) {
 	//translateTo values can be any one of the supported 62 languages
 	//in this case we use French ("fr") but you can choose any of the other supported ISO 639-1 codes
-	return { payload: params['id'], translateTo: "fr" };
+	var phrase = params['id'];
+	console.log("Phrase to translate is - " + phrase);
+	return { payload: phrase, translateTo: "fr" };
 }
 ```
 
@@ -68,8 +70,10 @@ This action will transform the incoming message so that the output will be forma
 
 ```
 function main(params) {
-	//this will create a new document with an id value of the payload
-	return { doc: { _id: params.payload } };
+	//this will create a new document with an id value of the translated phrase
+	var translation = params.payload;
+	console.log("Translated phrase is - " + translation);
+	return { doc: { _id: translation } };
 }
 ```
 
