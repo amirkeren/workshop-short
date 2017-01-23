@@ -1,6 +1,6 @@
 # Apache OpenWhisk Starter Overview
 
-The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
+The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities. The goal is to trigger an ETL operation by the creation of a new document in a Cloudant DB, then reading the document (Extract), translating the content to some target language using Watson Language Translator service (Transform) and then finally saving the result in a designated target DB (Load)
 
 # Table of contents
 1. [Preparation](https://github.com/amirkeren/workshop-short/blob/master/README.md#preparation)
