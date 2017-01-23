@@ -47,7 +47,7 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 # Creating the sequence
 
-We will now create the sequence translator-mediator-action -> watson-translator
+We will now create the sequence translator-mediator-action -> watson-translator, meaning we pass the phrase to a translator action
 
 1. Click on "Link into a Sequence"
 
@@ -94,17 +94,18 @@ Make a note of the name you chose for the action, we will need it in the next st
 
 # Extending the sequence
 
-We will now extend the sequence to translator-mediator-action -> watson-translator -> db-mediator-action -> db-insert
+We will now extend the sequence to translator-mediator-action -> watson-translator -> db-mediator-action -> db-insert,
+meaning we pass the translated phrase to an action that will reformat it and on to an action that will store the translated phrase in the DB
 
 1. Select the sequence you created in the previous step again and then click on "Extend"
 
-2. Select "My Actions" and choose the name of the action you had just created and click "Add to Sequence" (this will add the db-mediator-action we created to the end of the sequence)
+2. Select "My Actions" and choose the name of the action you had just created and click "Add to Sequence" (this will take the translated result and convert it to a document form)
 
 3. Click on "Extend" again, but this time choose "Cloudant"
 
 4. From the many available options, choose "create document" (you can choose to "View Source" if you want to see how the actual document creation works) and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
 
-5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB (this will add the "create document" action at the end of the sequnce, after the conversion was performed by the mediator action we created)
+5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB (this will take the document created by the db-mediator-action we added and insert it to the "translation" DB)
 
 6. To finish, click on "Save Configuration", followed by "Add to Sequence" and then on "Save Your Changes"
 
