@@ -119,7 +119,7 @@ To finish the flow we will create a trigger to run the sequence. The trigger wil
 
 3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"phrases"** DB
 
-4. Click on "Save Configuration" and "Next" (note that the new flow now includes the trigger as well)
+4. Click on "Save Configuration" and "Next" (note that the new flow now includes the trigger at the start)
 
 5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like) and "Done"
 
