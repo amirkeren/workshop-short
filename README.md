@@ -77,7 +77,7 @@ Finally, click on "Run with this Value" and you should see the translated *Bonjo
 
 # Adding the DB insertion mediator action
 
-This action will transform the incoming message so that the output will be formatted as the Cloudant document to be created
+We will now add the action that will transform the incoming message so that the output will be formatted as the Cloudant document to be created
 
 1. Create yet another new action, same as before and replace the main function with the one below - 
 
