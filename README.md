@@ -135,7 +135,7 @@ To finish the flow we will create a trigger to run the sequence. The trigger wil
 
 3. Select "Databases" on the left and the "phrases" database, and click on the "plus" sign next to "All Documents" and choose "New Doc"
 
-4. Enter some phrase in English in the following document form - `{ "_id": "<SOME_ENGLISH_PHRASE>" }`
+4. Enter some phrase in English in the following document form - `{ "_id": "<SOME_ENGLISH_PHRASE>" }` and click "Create Document"
 
 5. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
 
