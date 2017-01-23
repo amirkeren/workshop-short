@@ -49,7 +49,7 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 We will now create the sequence translator-mediator-action -> watson-translator, meaning we pass the phrase to a translator action
 
-1. Click on "Link into a Sequence" (make sure your newely created action is selected on the left)
+1. Select your newely created action on the left and click on "Link into a Sequence"
 
 2. Scroll down and choose "Watson Translator" and then choose "translator" under "Select an Action in this Package"
 
@@ -63,7 +63,7 @@ We will now create the sequence translator-mediator-action -> watson-translator,
 
 We will now test the sequence we created by passing it a phrase test message for translation
 
-1. Select the sequence you just created uner "My Sequences" and click on "Run this Sequence"
+1. Select the sequence you just created under "My Sequences" and click on "Run this Sequence"
 
 2. Provide the following JSON input -
 
@@ -113,7 +113,7 @@ meaning we pass the translated phrase to an action that will reformat it and on 
 
 To finish the flow we will create a trigger to run the sequence. The trigger will be a change in the "phrases" DB
 
-1. Click on "Automate" (make sure your sequence is selected on the left)
+1. Select your sequence again and click on "Automate"
 
 2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
 
