@@ -20,9 +20,13 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 3. Click on the "Create" button to add the new service
 
-4. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog (this will be used to perform the actual translations)
+4. Click "Launch" on the "Manage" tab and select "Databases" on the left
 
-5. Click on the "Create" button to add the new service
+5. Create two databases - "translations" and "phrases" by clicking the "Create Database" button on the top right
+
+6. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog (this will be used to perform the actual translations)
+
+7. Click on the "Create" button to add the new service
 
 # Creating the translation mediator action
 
