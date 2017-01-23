@@ -18,7 +18,7 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 2. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog (this will be used as the database for our web application)
 
-3. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will later allow OpenWhisk to connect to that DB instance)
+3. Click on the "Create" button to add the new service
 
 4. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog (this will be used to perform the actual translations)
 
