@@ -1,6 +1,6 @@
-# OpenWhisk Starter Overview
+# Apache OpenWhisk Starter Overview
 
-The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
+The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Table of contents
 1. [Preparation](https://github.com/amirkeren/workshop-short/blob/master/README.md#preparation)
