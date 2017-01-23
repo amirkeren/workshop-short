@@ -129,10 +129,10 @@ To finish the flow we will create a trigger to run the sequence. The trigger wil
 
 2. Go to the Cloudant instance you created (you can find it in your [dashboard](https://console.ng.bluemix.net/dashboard/services)), select it and click "Launch" on the "Manage" tab
 
-3. Select the "phrases" database and click on the "plus" sign next to "All Documents" and choose "New Doc"
+3. Select "Databases" on the left and the "phrases" database, and click on the "plus" sign next to "All Documents" and choose "New Doc"
 
-4. Enter some phrase in English in the following form - `{ "_id": "<SOME_ENGLISH_PHRASE>" }`
+4. Enter some phrase in English in the following document form - `{ "_id": "<SOME_ENGLISH_PHRASE>" }`
 
 5. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
 
-6. Go back to the Cloudant managemnt console and this time select the "translation" database. You should see the translation of the phrase you entered stored in the database as a new document
+6. Go back to the Cloudant managemnt console but this time select the "translation" database. You should see the translation of the phrase you entered stored in the database as a new document
