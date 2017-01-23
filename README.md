@@ -113,7 +113,7 @@ meaning we pass the translated phrase to an action that will reformat it and on 
 
 To finish the flow we will create a trigger to run the sequence. The trigger will be a change in the "phrases" DB
 
-1. Click on "Automate"
+1. Click on "Automate" (make sure your sequence is selected on the left)
 
 2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
 
