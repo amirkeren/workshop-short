@@ -49,7 +49,7 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 We will now create the sequence translator-mediator-action -> watson-translator, meaning we pass the phrase to a translator action
 
-1. Click on "Link into a Sequence"
+1. Click on "Link into a Sequence" (make sure your newely created action is selected on the left)
 
 2. Scroll down and choose "Watson Translator" and then choose "translator" under "Select an Action in this Package"
 
