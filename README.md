@@ -43,7 +43,7 @@ function main(params) {
 }
 ```
 
-Note that the changes are auto-saved but not live. In order to publish them you will need to click the "Make it Live" button on the bottom right
+Note that the changes are auto-saved but not live. In order to publish them you will need to click the "Make It Live" button on the bottom right
 
 # Creating the sequence
 
@@ -90,7 +90,7 @@ function main(params) {
 }
 ```
 
-Make a note of the name you chose for the action, we will need it in the next step
+Make a note of the name you chose for the action, we will need it in the next step (don't forget to **Make It Live**)
 
 # Extending the sequence
 
