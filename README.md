@@ -98,13 +98,13 @@ We will now extend the sequence to translator-mediator-action -> watson-translat
 
 1. Select the sequence you created in the previous step again and then click on "Extend"
 
-2. Select "My Actions" and choose the name of the action you had just created and click "Add to Sequence"
+2. Select "My Actions" and choose the name of the action you had just created and click "Add to Sequence" (this will add the db-mediator-action we created to the end of the sequence)
 
 3. Click on "Extend" again, but this time choose "Cloudant"
 
 4. From the many available options, choose "create document" (you can choose to "View Source" if you want to see how the actual document creation works) and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
 
-5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB
+5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB (this will add the "create document" action at the end of the sequnce, after the conversion was performed by the mediator action we created)
 
 6. To finish, click on "Save Configuration", followed by "Add to Sequence" and then on "Save Your Changes"
 
